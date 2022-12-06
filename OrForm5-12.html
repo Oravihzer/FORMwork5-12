@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title
+      style="
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      "
+    >
+      FormGroupWork
+    </title>
+  </head>
+  <body>
+    <h1
+      style="
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      "
+    >
+      Form Group Work!
+    </h1>
+
+    <form action="https://formspree.io/f/mknedjpo" method="post">
+      <fieldset
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+        "
+      >
+        <legend>Personal Info</legend>
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" />
+        <br />
+        <br />
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@domain.com"
+        />
+        <br /><br />
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob" name="date-of-birth" />
+        <br />
+        <br />
+        <label for="gender">Gender:</label>
+        <input type="radio" value="male" name="gender" checked />Male
+        <input type="radio" value="male" name="gender" />Female
+        <br />
+        <br />
+        <label for="country">Choose your Country:</label>
+        <select name="country" id="country">
+          <option value="israel">Israel</option>
+          <option value="holland">Holland</option>
+          <option value="germany">Germany</option>
+          <option value="qatar">Qatar</option>
+          <option value="uk">UK</option>
+          <option value="argentina">Argentina</option>
+          <option value="peru">Peru</option>
+        </select>
+        <br /><br /><br /><br />
+      </fieldset>
+      <fieldset
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+        "
+      >
+        <legend>Profile</legend>
+        <label for="image">Upload Profile Picture:</label>
+        <input
+          type="file"
+          id="image"
+          name="image"
+          accept="png, jpg, jpeg, pic"
+        />
+        <br /><br />
+        <label for="nickname">Choose Nickname:</label>
+        <input type="text" id="nickname" name="nickname" />
+        <br />
+        <br />
+        <label for="color">Choose Your Favorite color:</label>
+        <input type="color" id="color" name="color" />
+        <br />
+        <br />
+        <label for="pass">Choose Password:</label>
+        <input type="password" id="pass" name="password" />
+        <br />
+        <br />
+        <label for="repass">Confirm Password:</label>
+        <input type="password" id="repass" name="confirm-password" />
+        <br />
+        <br />
+        Write Some Words About You:
+        <br />
+        <label for="bio">Bio</label>
+        <br />
+        <textarea id="bio" cols="30" rows="10" name="free-bio"></textarea>
+      </fieldset>
+      <fieldset
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+        "
+      >
+        <legend>Favorite Animals:</legend>
+        <label for="favorite-dogs">Dogs</label>
+        <input type="checkbox" id="favorite-dogs" name="favorite-dogs" />
+        <label for="favorite-cats">Cats</label>
+        <input type="checkbox" id="favorite-cats" name="favorite-cats" />
+        <label for="favorite-hamster">Hamster</label>
+        <input type="checkbox" id="favorite-hamster" name="favorite-hamster" />
+        <label for="favorite-camels">Camels</label>
+        <input type="checkbox" id="favorite-camels" name="favorite-camels" />
+        <label for="favorite-Unicorn">Unicorn</label>
+        <input type="checkbox" id="favorite-Unicorn" name="favorite-Unicorn" />
+      </fieldset>
+      <fieldset
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+        "
+      >
+        <legend>Very Personal Questions</legend>
+        <label for="tall">How tall are you?:</label>
+        <input type="number" id="tall" name="tall" min="100" max="230" />
+        <br />
+        <br />
+        <label for="happy">How Happy are you? (1-5)</label>
+        <input type="range" min="0" max="5" step="1" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="reset" value="Reset!" /><br />
+        <input type="submit" value="Send!" /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
